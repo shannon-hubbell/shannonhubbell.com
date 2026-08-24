@@ -2,7 +2,7 @@
 layout: '../layouts/Layout.astro'
 title: 'Shannon Ellery Hubbell'
 description: 'Writer, web developer, and dinosaur aficionado in Oakland, CA.'
-og_title: 'Shannon Ellery Hubbell: Writer, web developer, and dinosaur aficionado in Oakland, CA.'
+og_title: 'Shannon Ellery Hubbell: Web developer and writer in Oakland, CA.'
 classes: [page, projects, home]
 ---
 

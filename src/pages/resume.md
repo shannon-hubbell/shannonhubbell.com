@@ -2,7 +2,7 @@
 layout: '../layouts/Layout.astro'
 title: Shannon Hubbell's Resumé
 description: Web developer and writer in Oakland, CA.
-og_title: Shannon Ellery Hubbell's Resumé
+og_title: 'Shannon Ellery Hubbell: Web developer and writer in Oakland, CA.'
 classes: [page, resume]
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: '../layouts/Layout.astro'
 title: Shannon Hubbell's Resumé
-description: Writer. Coder. Dinosaur aficionado.
+description: Web developer and writer in Oakland, CA.
 classes: [page, resume]
 ---
 

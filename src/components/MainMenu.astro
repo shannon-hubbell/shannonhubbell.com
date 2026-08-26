@@ -1,0 +1,45 @@
+<ul class="menu">
+    <li><a href="/" class="projects home">Home</a></li>
+    <li>
+        <a href="/resume/" class="resume">Resumé</a>
+    </li>
+    <li>
+        <a href="/contact/" class="contact">Contact</a>
+    </li>
+</ul>
+
+<style>
+    ul.menu {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding:  1rem 0;
+        gap: 1rem;
+        width: 100%;
+        li {
+            padding: 0 1rem 0 0;
+            border-right: 1px solid #999;
+            &:last-child {
+                border-right: none;
+            }
+        }
+        a {
+            text-decoration: none;
+            font-weight: bold;
+            &:hover {
+                color: #000;
+            }
+        }
+        @media screen and (width < 500px) {
+            display: block;
+            li {
+                border-right: none;
+            }
+        }
+    }
+    body.home a.home,
+    body.contact a.contact,
+    body.resume a.resume {
+        color: #000;
+    }
+</style>

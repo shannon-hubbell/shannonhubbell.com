@@ -1,5 +1,13 @@
-	:root {
-	    --color-copy: #b1ddf1;
-	    --color-highlight: #9f87af;
-	    --color-background: #29241d;
+:root {
+	--color-copy: #b1ddf1;
+	--color-highlight: #9f87af;
+	--color-background: #29241d;
+}
+
+a {
+	color: var(--color-highlight);
+
+		&:hover {
+			color: #000;
+		}
 	}

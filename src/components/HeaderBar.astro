@@ -1,36 +1,19 @@
 ---
-import shannonHeadshot from "../assets/sh-headshot.webp";
+import { Image } from "astro:assets";
+import shHeadshot from "../assets/sh-headshot.webp";
+import MainMenu  from "../components/MainMenu.astro";
+
 ---
 
 <header>
-    <h1><a href="/">Shannon Ellery Hubbell</a></h1>
-    <h2>Writer. Coder. Dinosaur&nbsp;aficionado.</h2>
-    <ul class="menu">
-        <li><a href="/" class="projects home">Home</a></li>
-        <li>
-            <a href="/resume/" class="resume">Resumé</a>
-        </li>
-        <li>
-            <a href="/contact/" class="contact">Contact</a>
-        </li>
-        <li>
-            <a
-                href="https://www.linkedin.com/in/shannonhubbell/"
-                target="_blank">LinkedIn</a
-            >
-        </li>
-        <li>
-            <a
-                href="https://bsky.app/profile/brundlefly.bsky.social"
-                target="_blank">Bluesky</a
-            >
-        </li>
-        <li>
-            <a href="https://www.instagram.com/shannonhubbell/" target="_blank"
-                >Instagram</a
-            >
-        </li>
-    </ul>
+    
+    <img src="/headshot.webp" class="align-right mug" />
+
+    <div class="inner">
+        <h1><a href="/">Shannon Ellery Hubbell</a></h1>
+        <h2>Writer. Coder. Dinosaur&nbsp;aficionado.</h2>
+        <MainMenu />
+    </div>
 </header>
 
 <style>
@@ -39,53 +22,43 @@ import shannonHeadshot from "../assets/sh-headshot.webp";
         max-width: calc(100% - 2em);
         margin: 0 auto;
         padding: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
     }
 
     h1 {
         font-size: 2.5rem;
         margin: 0;
         a {
-            color: #9f87af;
+            color: var(--color-highlight);
             text-decoration: none;
         }
     }
 
     h2 {
-        color: #888;
+        color: #CCC;
         margin: 0;
         padding: 0.4rem 0 0 0;
     }
-
-    ul.menu {
-        list-style: none;
-        display: flex;
-        margin: 0;
-        padding: 1rem 0;
-        gap: 1rem;
-        li {
-            padding: 0 1rem 0 0;
-            border-right: 1px solid #999;
-            &:last-child {
-                border-right: none;
-            }
-        }
-        a {
-            color: #888;
-            &:hover {
-                color: #000;
-            }
-        }
-        @media screen and (width < 500px) {
+    div.inner {
+        vertical-align: middle;
+        justify-content: center;
+        width: calc(100% - 200px);
+    }
+    img.mug {
+        border-radius: 50%;
+        max-width: 150px;
+        aspect-ratio: 1 /1;
+        border: 10px solid var(--color-highlight);
+    }
+    @media screen and (width < 500px) {
+        header {
             display: block;
-            li {
-                border-right: none;
-            }
+        }
+        div.inner {
+            width: auto;
         }
     }
-    body.home a.home,
-    body.contact a.contact,
-    body.resume a.resume {
-        color: #000;
-    }
-
 </style>

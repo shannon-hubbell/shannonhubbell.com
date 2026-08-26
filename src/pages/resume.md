@@ -12,7 +12,7 @@ classes: [page, resume]
 Oakland, CA 94607<br>
 brundlefly@gmail.com
 
-[PDF Download](/shannon-hubbell-resume-2026-08.pdf)
+[PDF Download](/docs/shannon-hubbell-resume-2026-08.pdf)
 
 ----
 

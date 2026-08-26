@@ -1,14 +1,30 @@
 ---
 const today = new Date();
+import socialLi from "../../public/img/social-li-black.png";
+import socialInsta from "../../public/img/social-ig-black.png";
+import socialBsky from "../../public/img/social-bsky-black.png";
 ---
+
 <footer>
+    <a href="https://www.linkedin.com/in/shannonhubbell/" target="_blank">
+        <img src={socialLi.src} height="25" alt="LinkedIn" />
+    </a>
 
-    &copy; {today.getFullYear()} Shannon Ellery Hubbell. All rights reserved.
+    <a href="https://www.instagram.com/shannonhubbell/" target="_blank">
+        <img src={socialInsta.src} height="25" alt="Instagram" />
+    </a>
 
+
+    <a href="https://bsky.app/profile/brundlefly.bsky.social" target="_blank">
+        <img src={socialBsky.src} height="25" alt="Bluesky" />
+    </a>
+
+    <p>
+        &copy; {today.getFullYear()} Shannon Ellery Hubbell. All rights reserved.
+    </p>
 </footer>
 
 <style>
-
     footer {
         width: 800px;
         max-width: calc(100% - 2em);
@@ -16,5 +32,7 @@ const today = new Date();
         padding: 1rem 0 5rem 0;
         color: #999;
     }
-
+    img {
+        opacity: 0.5;
+    }
 </style>

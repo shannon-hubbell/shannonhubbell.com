@@ -6,16 +6,16 @@ import socialBsky from "../../public/img/social-bsky-black.png";
 ---
 
 <footer>
-    <a href="https://www.linkedin.com/in/shannonhubbell/" target="_blank">
+    <a href="https://www.linkedin.com/in/shannonhubbell/" target="_blank" class="soc">
         <img src={socialLi.src} height="25" alt="LinkedIn" />
     </a>
 
-    <a href="https://www.instagram.com/shannonhubbell/" target="_blank">
+    <a href="https://www.instagram.com/shannonhubbell/" target="_blank" class="soc">
         <img src={socialInsta.src} height="25" alt="Instagram" />
     </a>
 
 
-    <a href="https://bsky.app/profile/brundlefly.bsky.social" target="_blank">
+    <a href="https://bsky.app/profile/brundlefly.bsky.social" target="_blank" class="soc">
         <img src={socialBsky.src} height="25" alt="Bluesky" />
     </a>
 
@@ -32,8 +32,14 @@ import socialBsky from "../../public/img/social-bsky-black.png";
         padding: 1rem 0 5rem 0;
         color: #999;
     }
+    a.soc {
+        margin-right: 10px;
+    }
     img {
-        margin: 0 10px 0 0;
         opacity: 0.5;
+        transition: all 0.5s;
+        &:hover {
+            opacity: 1;
+        }
     }
 </style>

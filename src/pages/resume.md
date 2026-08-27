@@ -14,8 +14,6 @@ brundlefly@gmail.com
 
 [PDF Download](/docs/shannon-hubbell-resume-2026-08.pdf)
 
-----
-
 ## Skills
 
 ### Web

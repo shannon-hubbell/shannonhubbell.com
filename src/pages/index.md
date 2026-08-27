@@ -6,9 +6,9 @@ og_title: 'Shannon Ellery Hubbell: Coder and writer in Oakland, CA.'
 classes: [page, projects, home]
 ---
 
-# Howdy!
+# I'm Shannon. Nice to meet you!
 
-Nice to meet you! I'm Shannon. I'm from the great town of New Orleans, Louisiana and now live in the great town of Oakland, California. I build things for the internet, I write, and I am more enthusiastic about paleontology than a non-paleontologist adult should be.
+I build things for the internet, I write, and I am more enthusiastic about paleontology than a non-paleontologist adult should be. I hail from the beautiful town of New Orleans, Louisiana and now live in the beautiful town of Oakland, California.
 
 Here are some things I've been working on:
 

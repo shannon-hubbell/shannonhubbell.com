@@ -22,7 +22,7 @@ brundlefly@gmail.com
 
 As a coder I have spent over 25 years building digital marketing assets for clients such as **Adobe**, **Google**, **Autodesk**, **Microsoft**, and **Salesforce**. This has included full sites, campaign pages, EDM templates, animated banner ads, and virtual event applications.
 
-HTML, Javascript, CSS, PHP, WordPress, Contentful, Astro, Jekyll... whatever tool does the job. I work from designs in Photoshop, Figma, and GIMP.
+HTML, Javascript, CSS, PHP, WordPress, Contentful, Astro, Jekyll. Whatever tool does the job. I work from designs in Photoshop, Figma, and GIMP.
 
 More recently I've branched out into game development with Godot and Twine.
 

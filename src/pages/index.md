@@ -14,4 +14,4 @@ Here are some things I've been working on:
 
 * **[The Museum of Art and Digital Entertainment](https://themade.org)**<br>I volunteer at Oakland's **MADE**, a playable console video game museum, which is exactly as fun as it sounds. They also offer classes, community events, and volunteering opportunities around gaming culture and creation. I help run their website and contribute to [their social media presence](https://bsky.app/profile/mademuseum.bsky.social).
 
-* **["Tank Flintlock"](https://shannonelleryhubbell.itch.io/tank-flintlock)**<br>An interactive adventure tale of talking crabs and grizzled former antiheroes, set on a discarded resort planet called Ostia. There are also puns. Still in the works. Stray tuned!
+* **["Tank Flintlock"](https://shannonelleryhubbell.itch.io/tank-flintlock)**<br>An interactive adventure tale of talking crabs and grizzled former antiheroes, set on a discarded resort planet called Ostia. There are also puns. Still in the works. Stay tuned!

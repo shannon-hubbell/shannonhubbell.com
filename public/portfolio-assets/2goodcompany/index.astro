@@ -1,0 +1,474 @@
+---
+// src/pages/isolated-landing.astro
+// You can still fetch data or use components here if needed, 
+// just don't import your global layout.
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Good Company Communications</title>
+
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="/portfolio-items/2goodcompany/css/slippry.css">
+	<link rel="stylesheet" type="text/css" href="/portfolio-items/2goodcompany/css/main.css">
+</head>
+<body>
+	<header id="page-header">
+		<nav id="main-nav">
+			<div class="binding clearfix">
+				<a href="#page-header">
+					<img src="/portfolio-items/2goodcompany/img/header-logo.png" height="52" width="231" class="logo" alt="GoodCompany Logo">
+				</a>
+				<!--
+				<a href="https://2goodcompany.boomerecommerce.com">
+					<img src="/portfolio-items/2goodcompany/img/online-ordering.png" srcset="img/online-ordering.png 1x, img/online-ordering@2x.png 2x" height="49" width="64" id="online-ordering">
+				</a>
+				-->			
+				<ul>
+					<li><a href="#who">
+						<div>Who</div>
+						We Are
+					</a></li>
+					<li><a href="#what">
+						<div>What</div>
+						We Do
+					</a></li>
+					<li><a href="#work">
+						<div>Work</div>
+						We've Done
+					</a></li>
+					<li><a href="#where">
+						<div>Where</div>
+						We've Been
+					</a></li>
+					<li><a href="#contact">
+						<div>Connect</div>
+						Let's Talk
+					</a></li>
+				</ul>
+
+			</div>
+		</nav>
+		<div class="headlines">
+			<div class="inner">
+				<div class="offerings">
+					Digital | Streaming | Live
+				</div>
+				<h1>Killer Content. Brilliant Execution.</h1>
+				<a href="#work" class="fade-in-on-load">
+					<img src="/portfolio-items/2goodcompany/img/seework.gif" height="58" width="212" alt="See Our Work" class="cta">
+				</a>
+			</div>
+		</div>
+	</header>
+	<section id="who">
+		<div class="binding">
+			<h2><span>Who</span> We Are</h2>
+			<p>Good Company is a leading and award winning Production Company with expertise in creative marketing, branding, digital media, streaming video production, staging, and world-wide live-event production management—all with deeply creative and experienced storytelling that translates well into any medium.</p>
+		</div>
+	</section>
+	<section id="what">
+		<div class="binding">
+			<h2><span>What</span> We Do</h2>
+			<div class="row half group">
+				<div class="column">
+					<!--<img src="/portfolio-items/2goodcompany/img/target.png" height="83" width="82" alt="Bullseye Icon" >-->
+					<p>We deliver technical innovation, killer creativity, practicality, deep experience, professionalism and honesty. On time and on budget—and always with your business goals in mind.</p>
+				</div>
+				<!--
+				<div class="column">
+					<img src="/portfolio-items/2goodcompany/img/gear.png" height="81" width="81" alt="Gear Icon">
+					<p>Good Company integrates your existing brand marketing, sales momentum and messaging—we won't try to reinvent the wheel. Leverage what you have that works.</p>
+				</div>
+				-->
+				<div class="column">
+					<!--<img src="/portfolio-items/2goodcompany/img/team.png" height="85" width="74" alt="Teamwork Icon">-->
+					<p>We work as an extension of your team to manage your programs to bring razor sharp creative, open communication and organizational efficiency to your team and your customers.</p>
+				</div>
+			</div>
+			<div class="row quarter group">
+				<div class="column">
+					<h3>Digital</h3>
+					<ul>
+						<li>Motion Graphics</li>
+						<li>Design</li>
+						<li>Branding</li>
+						<li>Print</li>
+						<li>Web</li>
+						<li>Video</li>
+						<li>3D</li>
+						<li>Signage</li>
+					</ul>
+				</div>
+				<div class="column">
+					<h3>Streaming</h3>
+					<ul>
+						<li>HD Video</li>
+						<li>Live Event Content</li>
+						<li>Productization</li>
+						<li>Post Production</li>
+						<li>Product Demos</li>
+					</ul>
+				</div>
+				<div class="column half">
+					<h3>Live</h3>
+					<ul>
+						<li>Event Management</li>
+						<li>Technical Direction</li>
+						<li>Event Design</li>
+						<li>Lighting Design</li>
+						<li>Scenic &amp; Staging</li>
+						<li>Location Services</li>
+					</ul>
+					<ul>
+						<li>Contract Negotiation</li>
+						<li>Main Stage Design</li>
+						<li>Session Rooms</li>
+						<li>Tradeshows</li>
+						<li>Registration</li>
+						<li>Speaker Management</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="work">
+		<h2><span>Work</span> We've Done</h2>
+		<div id="work-slider">
+			<a href="#" class="arrow prev disabled">Previous</a>
+			<a href="#" class="arrow next">Next</a>
+			<ul>
+				<li class="active" data-title="CHEF Says: The Revolution Will Not Be Televised" data-desc="Seriously, who watches cable TV anymore, anyways? We created this defiant piece to open the show at #ChefConf.">
+					<iframe id="chef_says" src="https://player.vimeo.com/video/142679357?title=0&amp;byline=0&amp;portrait=0&amp;api=1&amp;player_id=chef_says" width="500" height="281" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				</li>
+				<li data-title="The DevOps Summit Bump and T-Shirt" data-desc="Often times, it's the little details stick out the most. We helped Electric Cloud and IT Revolution keep their branding sharp all the way down to the transitional animation elements for #DOES14">
+					<iframe id="does_bump" src="https://player.vimeo.com/video/142679212?title=0&amp;byline=0&amp;portrait=0&amp;api=1&amp;player_id=does_bump" width="500" height="281" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				</li>
+				<li data-title="Adobe Acrobat &amp;amp; Productive Government" data-desc="Congress may be gridlocked, but the government still has services to provide. We created a series of videos and a landing page to explain how Adobe Acrobat can help streamline government operations.">
+					<iframe id="adobe_acrobat" src="https://player.vimeo.com/video/142679007?title=0&amp;byline=0&amp;portrait=0&amp;api=1&amp;player_id=adobe_acrobat" width="500" height="281" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				</li>
+				<li data-title="Adobe Marketing Cloud" data-desc="Nowadays, data is king. So, we created this video for Adobe Marketing Cloud to show how their solutions use data to rule the marketing world.">
+					<iframe id="adobe_marketing" src="https://player.vimeo.com/video/142678239?title=0&amp;byline=0&amp;portrait=0&amp;api=1&amp;adobe_marketing" width="500" height="281" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				</li>
+				<li data-title="Dabble" data-desc="Dabble wants you to make history with them. But first, have you been introduced? We helped Dabble put their best foot forward with this sleek product introduction video.">
+					<iframe id="dabble" src="https://player.vimeo.com/video/142679574?title=0&amp;byline=0&amp;portrait=0&amp;api=1&amp;player_id=dabble" width="500" height="281" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				</li>
+				<li data-title="GE Healthcare: Centricity Advance" data-desc="Complex products can require explanation. GE Healthcare's Centricity Advance is one of these.">
+					<iframe id="ge_healthcare" src="https://player.vimeo.com/video/142679897?title=0&amp;byline=0&amp;portrait=0&amp;api=1&amp;player_id=ge_healthcare" width="500" height="281" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				</li>
+				<li data-title="Elekta Video Testimonials" data-desc="Your customer is a great salesperson. We shot and directed a series of customer testimonials using remote technology.">
+					<iframe id="elekta_testimonials" src="https://player.vimeo.com/video/142679855?title=0&amp;byline=0&amp;portrait=0&amp;api=1&amp;player_id=elekta_testimonials" width="500" height="281" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				</li>
+				<li data-title="Swift Engineering with Cray" data-desc="We shot and edited this customer story that examines the intersection of fast cars and high performance computing.">
+					<iframe id="swift_cray" src="https://player.vimeo.com/video/142679430?title=0&amp;byline=0&amp;portrait=0&amp;api=1&amp;player_id=swift_cray" width="500" height="281" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				</li>
+				<li data-title="Tech Superwomen Summit" data-desc="Only 3% of tech startups are led by women. We think it's time for change. So, we created this promo video to help spread the word with the Tech Superwomen Summit.">
+					<iframe id="tech_superwomen" src="https://player.vimeo.com/video/142679969?title=0&amp;byline=0&amp;portrait=0&amp;api=1&amp;player_id=tech_superwomen" width="500" height="281" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				</li>
+				<li data-title="CHEF: Rule the Cloud" data-desc="CHEF's infrastructure automation platform helps companies rule the cloud. We produced this video to help CHEF communicate the benefits of their platform at tradeshows.">
+					<iframe id="chef_rule_cloud" src="https://player.vimeo.com/video/147528627?title=0&amp;byline=0&amp;portrait=0&amp;api=1&amp;player_id=chef_rule_cloud" width="500" height="281" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				</li>
+				<li data-title="ChefConf 2016" data-desc="Held in Austin, Texas. See the conference site for more info: <a href='https://chefconf.chef.io/'>https://chefconf.chef.io/</a>">
+					<img src="/portfolio-items/2goodcompany/work-images/chefconf2016-1.jpg" alt="">
+				</li>
+				<li data-title="ChefConf 2016" data-desc="Held in Austin, Texas. See the conference site for more info: <a href='https://chefconf.chef.io/'>https://chefconf.chef.io/</a>">
+					<img src="/portfolio-items/2goodcompany/work-images/chefconf2016-2.jpg" alt="">
+				</li>
+				<li data-title="ChefConf 2016" data-desc="Held in Austin, Texas. See the conference site for more info: <a href='https://chefconf.chef.io/'>https://chefconf.chef.io/</a>">
+					<img src="/portfolio-items/2goodcompany/work-images/chefconf2016-3.jpg" alt="">
+				</li>
+				<li data-title="ChefConf 2016" data-desc="Held in Austin, Texas. See the conference site for more info: <a href='https://chefconf.chef.io/'>https://chefconf.chef.io/</a>">
+					<img src="/portfolio-items/2goodcompany/work-images/chefconf2016-4.jpg" alt="">
+				</li>
+				<li data-title="Web2.0 Summit Mainstage" data-desc="">
+					<img src="/portfolio-items/2goodcompany/work-images/3.jpg" alt="">
+				</li>
+				<li data-title="Nokia Party" data-desc="">
+					<img src="/portfolio-items/2goodcompany/work-images/47.jpg" alt="">
+				</li>
+				<li data-title="Amsterdam Load" data-desc="">
+					<img src="/portfolio-items/2goodcompany/work-images/59.jpg" alt="">
+				</li>
+				<li data-title="A Good Company Production: expo" data-desc="">
+					<img src="/portfolio-items/2goodcompany/work-images/60.jpg" alt="">
+				</li>
+				<li data-title="A Good Company Production" data-desc="">
+					<img src="/portfolio-items/2goodcompany/work-images/20151105_170226-straight.jpg" alt="">
+				</li>
+				<li data-title="A Good Company Production" data-desc="">
+					<img src="/portfolio-items/2goodcompany/work-images/20151105_170452.jpg" alt="">
+				</li>
+				<li data-title="A Good Company Production" data-desc="">
+					<img src="/portfolio-items/2goodcompany/work-images/Camera-shot.jpg" alt="">
+				</li>
+				<li data-title="A Good Company Production: Main Stage Selfie" data-desc="">
+					<img src="/portfolio-items/2goodcompany/work-images/ChefConf-2015-7626.jpg" alt="">
+				</li>
+				<li data-title="A Good Company Production" data-desc="">
+					<img src="/portfolio-items/2goodcompany/work-images/ChefConf-2015-7674.jpg" alt="">
+				</li>
+				<li data-title="DevOps Enterprise Summit Main Stage 2015" data-desc="">
+					<img src="/portfolio-items/2goodcompany/work-images/DevOps-Main-Stage.jpg" alt="">
+				</li>
+				<li data-title="A Good Company Production: Main Stage" data-desc="">
+					<img src="/portfolio-items/2goodcompany/work-images/GCC-Main-Stage.jpg" alt="">
+				</li>
+				<li data-title="A Good Company Production" data-desc="">
+					<img src="/portfolio-items/2goodcompany/work-images/IMG_9641.JPG" alt="">
+				</li>
+				<li data-title="A Good Company Production" data-desc="">
+					<img src="/portfolio-items/2goodcompany/work-images/IMG_9667.JPG" alt="">
+				</li>
+				<li data-title="Good Company Audience" data-desc="">
+					<img src="/portfolio-items/2goodcompany/work-images/IMG_9700.JPG" alt="">
+				</li>
+				<li data-title="A Good Company Production" data-desc="">
+					<img src="/portfolio-items/2goodcompany/work-images/IMG_9742.JPG" alt="">
+				</li>
+				<li data-title="A Good Company Production: Newsroom" data-desc="">
+					<img src="/portfolio-items/2goodcompany/work-images/Newsroom.jpg" alt="">
+				</li>
+				<li data-title="Good Company Backstage" data-desc="">
+					<img src="/portfolio-items/2goodcompany/work-images/oreilly-02.jpg" alt="">
+				</li>
+				<li data-title="Good Company Backstage" data-desc="">
+					<img src="/portfolio-items/2goodcompany/work-images/oreilly-03.jpg" alt="">
+				</li>
+				<li data-title="Good Company Backstage" data-desc="">
+					<img src="/portfolio-items/2goodcompany/work-images/oreilly-05.jpg" alt="">
+				</li>
+				<li data-title="Good Company Backstage" data-desc="">
+					<img src="/portfolio-items/2goodcompany/work-images/oreilly-06.jpg" alt="">
+				</li>
+				<li data-title="A Good Company Production: Main Stage" data-desc="">
+					<img src="/portfolio-items/2goodcompany/work-images/Velocity-NY-2015.jpg" alt="">
+				</li>
+			</ul>
+			<div class="description">
+				<h3></h3>
+				<p></p>
+			</div>
+		</div>
+	</section>
+	<section id="where">
+		<div class="background">&nbsp;</div>
+		<div class="binding">
+			<h2><span>Where</span> We've Been</h2>
+			<p>We've been around—and for nearly 30 years, our client list and our reputation speak for themselves.</p>
+
+			<a id="load-where-slideshow" class="btn btn-primary margin-top-20">SEE WHERE WE'VE BEEN</a>
+
+
+		</div>
+		<div id="where-gallery" class="gallery-view">
+			<img src="/portfolio-items/2goodcompany/img/where-close.png" height="29" width="29" alt="Close" class="close">
+			<img src="/portfolio-items/2goodcompany/img/where-gallery-icon.png" height="26" width="27" alt="View Gallery" class="gallery-button">
+		</div>
+		
+	</section>
+
+	<section id="quotes">
+		<img src="/portfolio-items/2goodcompany/img/quote.png" height="64" width="79" class="quotation-mark" alt="Quotation Mark">
+		<div class="binding">
+			<ul id="quotes-slideshow" class="group">
+				<li>
+					<blockquote>
+					
+						<p>I depend on Good Company for all my conference production, creative planning, and logistics. I have worked with Johnny Good and team at every company I’ve built &ndash; and they've always played a key role in our brand’s success. I wouldn't be where I am without them.</p>
+
+						<footer>
+							<span>Jesse Robbins</span><br>
+							Founder &amp; CEO Orion Labs,<br>
+							Founding CEO Chef Software
+						</footer>
+					</blockquote>
+				</li>
+				<li>
+					<blockquote>
+						<p>I simply do not know of a better partner for event operations than Good Company.</p>
+						<footer>
+							<span>John Allspaw</span><br>
+							Velocity Program co-Chair, O’Reilly Media<br>
+							CTO, Etsy
+						</footer>
+					</blockquote>
+				</li>
+				<li>
+					<blockquote>
+						<p>Good Company has the arts background, the technical know-how, and the boldness to help shape not only the execution, but the vision for what's possible.</p>
+						<footer>
+							<span>Adam Jacob</span><br>
+							CTO, CHEF
+						</footer>
+					</blockquote>
+				</li>
+				<li>
+					<blockquote>
+						<p>For two years, Johnny, Kelly and the entire Good Company team have been fantastic: reliable, thorough, responsive, and always focused on creating a great experience for the attendees, organizers and speakers. We’re grateful for all their expertise and help, and look forward to working with them on many future events!</p>
+						<footer>
+							<span>Gene Kim</span><br>
+							Founder, IT Revolution
+						</footer>
+					</blockquote>
+				</li>
+				<li>
+					<blockquote>
+						<p>Good Company transformed our conference with their superb event creative and technical expertise. </p>
+						<footer>
+							<span>Becky Sipos</span><br>
+							President &amp; CEO, Character.org
+						</footer>
+					</blockquote>
+				</li>
+				<li>
+					<blockquote>
+						<p>I have never worked with a more talented, capable or creative person or team then Johnny Good and Good Company!</p>
+						<footer>
+							<span>Richard C. Cuneo</span><br>
+							SVP Worldwide Sales, Autodesk
+						</footer>
+					</blockquote>
+				</li>
+				<li>
+					<blockquote>
+						<p>As the Director of a large annual conference with a small internal team, it’s rare to find a partner that still provides such a personal approach to client relationships. They are considerate of budgets, work styles and always responsive and available. I consider Johnny and the entire Good Company team an essential part of our success, growth and accomplishments.</p>
+						<footer>
+							<span>Pamela Schwartz</span><br>
+							Director of Conferences, BSR
+						</footer>
+					</blockquote>
+				</li>
+				<li>
+					<blockquote>
+						<p>Johnny and the Good Company crew is knowledgeable AND friendly, knowing the balance of putting on a great show and caring about the presenters and audience.</p>
+						<footer>
+							<span>Steve Souders</span><br>
+							Velocity Program co-Chair, O’Reilly Media<br>
+							Chief Performance Officer, Fastly
+						</footer>
+					</blockquote>
+				</li>
+				<li>
+					<blockquote>
+						<p>Although best known for his highly successful Event Marketing &amp; Production, Johnny and Good Company are equally comfortable and effective in the creative digital media and design branding fields. Good Company consistently succeeds by listening and learning about their clients before jumping into potential solutions. And, Johnny is a true professional and all around "nice guy" to work with!</p>
+						<footer>
+							<span>Malcolm Davies</span><br>
+							Founding Partner, Techevate<br>
+							CEO, Pod Systems
+						</footer>
+					</blockquote>
+				</li>
+				<li>
+					<blockquote>
+						<p>I wanted to thank you and Good Company for making Aegisoft the 800lb gorilla in our market! Our company was just acquired in a stock and cash transaction for close to 15 times revenues.</p>
+						<footer>
+							<span>Patrick F. Winger</span><br>
+							Former COO, Aegisoft Corporation<br>
+							CEO, HireGain
+						</footer>
+					</blockquote>
+				</li>
+				<li>
+					<blockquote>
+						<p>Brilliant creative, highly responsive, great pricing, will use again, would recommend to anyone I know.</p>
+						<footer>
+							<span>David Brogan</span><br>
+							Founder, MarketTools
+						</footer>
+					</blockquote>
+				</li>
+				<li>
+					<blockquote>
+						<p>From the very start, Good Company has been 'great company' as creative and technical production partners to Chef in making ChefConf one of fastest growing and most vibrant IT conferences in the world.</p>
+						<footer>
+							<span>Jay Wampold</span><br>
+							VP Marketing, Chef
+						</footer>
+					</blockquote>
+				</li>
+				<li>
+					<blockquote>
+						<p>Working with Good Company has always been a great experience! The team always takes time to listen to everyone associated with the events and use their input productively, while bringing their own ideas to the table. With a world-class team &mdash; you're not only getting top production skills when you engage Good Company, you're going to be working with people you're genuinely looking forward to seeing again at the next event.</p>
+						<footer>
+							<span>Peter Cooper</span><br>
+							Co-Chair, O'Reilly Fluent<br>
+							Editor, JavaScript Weekly<br>
+							Founder, Cooper Press
+						</footer>
+					</blockquote>
+				</li>
+				<li>
+					<blockquote>
+						<p>Good Company really came through for us on a retail commercial interactive production project that had a very tight deadline and budget. The Good Company team consulted with us, wrote the script, hired the talent and went beyond the call of duty to provide us with the perfect location and production. They did an excellent job &mdash; I would highly recommend Good Company for any creative projects; they are professional, reliable and cutting edge.</p>
+						<footer>
+							<span>Darci Rosenblum</span><br>
+							Marketing Director, LeapFrog Toys
+						</footer>
+					</blockquote>
+				</li>
+				<li>
+					<blockquote>
+						<p>We have been recommending Good Company Communications to our client base for over 20 years. As the #1 computer games agency worldwide, we work with scores of game developers who know what creativity and fast-paced environments are all about; and, they're always budget conscious. They like what GCC delivers &mdash; first-rate events and media which are as creative and effective as the games my clients' are developing. It's a great match!</p>
+						<footer>
+							<span>Doug Mealy</span><br>
+							President &amp; CEO, OMPR Public Relations Agency
+						</footer>
+					</blockquote>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<section id="contact">
+		<h2><span>Let's</span> Talk</h2>
+		<h3 class="phone"><span>707.579.9536</span></h3>
+		<h3 class="form">Or drop us a line</h3>
+		
+		<div id="form-wrapper">
+			<form id="contact-form">
+				<input type="text" class="half" name="name" placeholder="Name" required>
+				<input type="email" class="half" name="email" placeholder="Email" required>
+				<textarea name="message" placeholder="Message" class="full" required></textarea>
+				<input type="image" class="submit" name="submit" src="/portfolio-items/2goodcompany/img/form-submit.gif" alt="Submit Form">
+			</form>
+		</div>
+	</section>
+	<footer id="page-footer">
+		<div class="binding">
+
+			<div class="copyright">
+
+			<!--
+				<ul class="social-links">
+					<li><a href="https://www.facebook.com/goodcompanyproductions/"><img src="/portfolio-items/2goodcompany/img/facebook.png" height="35" width="17" alt="Facebook" srcset="img/facebook.png 1x, img/facebook@2x.png 2x"></a></li>
+					<li><a href="https://twitter.com/2GoodCompany"><img src="/portfolio-items/2goodcompany/img/twitter.png" height="34" width="43" alt="Twitter" srcset="img/twitter.png 1x, img/twitter@2x.png 2x"></a></li>
+					<li><a href="https://www.instagram.com/2goodcompanycommunications/"><img src="/portfolio-items/2goodcompany/img/instagram.png" height="35" width="36" alt="Instagram" srcset="img/instagram.png 1x, img/instagram@2x.png 2x"></a></li>
+				</ul>
+			-->
+				&copy; 2016 Good Company Comunications.  All Rights Reserved.
+			</div>
+
+
+			<img src="/portfolio-items/2goodcompany/img/footer-logo.png" height="52" width="232" alt="Good Company" class="logo">
+
+		</div>
+	</footer>
+	<script type="text/javascript" src="/portfolio-items/2goodcompany/js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="/portfolio-items/2goodcompany/js/jquery.fitvids.js"></script>
+	<script type="text/javascript" src="/portfolio-items/2goodcompany/js/jquery.vimeo.api.min.js"></script>
+	<script type="text/javascript" src="/portfolio-items/2goodcompany/js/slippry.min.js"></script>
+	<script type="text/javascript" src="/portfolio-items/2goodcompany/js/jquery.transit.min.js"></script>
+	<!--<script type="text/javascript" src="/portfolio-items/2goodcompany/js/jquery.validate.min.js"></script>-->
+	<script type="text/javascript" src="/portfolio-items/2goodcompany/js/scripts.min.js"></script>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-72210717-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+	</body>
+</html>

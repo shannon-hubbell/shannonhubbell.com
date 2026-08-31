@@ -10,6 +10,10 @@ classes: [page]
 
 <ul>
     <li>
+        <strong><a href="https://www.adobe-audience-finder.com/" target="_blank">Adobe Audience Finder</a></strong><br>
+        A filterable and searchable directory of Adobe data partners, built in Wordpress.
+    </li>
+    <li>
         <strong><a href="/portfolio/cepheid/" target="_blank">Cepheid - Move from point-of-complexity to point-of-care simplicity</a></strong><br>
         Marketing microsite for a medical diagnostics company specializing in DNA testing.
     </li>

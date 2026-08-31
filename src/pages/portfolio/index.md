@@ -15,6 +15,6 @@ classes: [page]
     </li>
     <li>
         <strong><a href="/portfolio/2goodcompany/" target="_blank">Good Company Communications</a></strong><br>
-        Website for digital marketing, streaming, and live event agency.
+        Website for a digital marketing, streaming, and live event agency.
     </li>
 </ul>

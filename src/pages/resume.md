@@ -79,6 +79,10 @@ I write things! Screenplays, comics, film criticism. Other stuff. You can tell I
 * Coordinated with the company team in determining b-roll locations and shot b-roll footage.
 * Created interactive menus for DVDs.
 
+----
+
+## Passion Projects
+
 ### Museum of Art and Digital Entertainment (2019-present)
 #### Volunteer Web and Social Media Project Manager
 

@@ -8,6 +8,13 @@ classes: [page]
 
 # Portfolio
 
-[Good Company Communications](/portfolio/2goodcompany/)
-
-[Cepheid](/portfolio/cepheid/)
+<ul>
+    <li>
+        <strong><a href="/portfolio/cepheid/" target="_blank">Cepheid - Move from point-of-complexity to point-of-care simplicity</a></strong><br>
+        Marketing microsite for a medical diagnostics company specializing in DNA testing.
+    </li>
+    <li>
+        <strong><a href="/portfolio/2goodcompany/" target="_blank">Good Company Communications</a></strong><br>
+        Website for digital marketing, streaming, and live event agency.
+    </li>
+</ul>

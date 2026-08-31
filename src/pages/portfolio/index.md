@@ -9,3 +9,5 @@ classes: [page]
 # Portfolio
 
 [Good Company Communications](/portfolio/2goodcompany/)
+
+[Cepheid](/portfolio/cepheid/)

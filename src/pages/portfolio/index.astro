@@ -96,14 +96,14 @@ const classes = ["page", "portfolio"];
                     overflow: hidden;
                     margin: 0;
                     opacity: 0;
-                    transition: all 0.5s ease-out;
+                    transition: all 0.75s cubic-bezier(0, 1, 0, 1);
                 }
             }
             &:hover {
                 p {
                     max-height: 370px;
                     opacity: 1;
-                    transition: all 0.5s ease-in;
+                    transition: all 0.5s ease-in-out;
                 }
             }
         }

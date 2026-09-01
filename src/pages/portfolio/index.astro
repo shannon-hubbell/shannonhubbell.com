@@ -10,8 +10,22 @@ const classes = ["page", "portfolio"];
 <Layout pageTitle={title} pageDescription={description} pageClasses={classes}>
     <section class="portfolio-grid">
         <header>
-            <h1>Web Portfolio</h1>
+            <h1>Web &amp; Video Portfolio</h1>
         </header>
+        <a
+            href="https://www.youtube.com/watch?v=MXCVSs3d1bo"
+            target="_blank"
+            style="background-image: url(/portfolio-assets/autodesk/ar-video/thumb.webp)"
+        >
+            <article>
+                <h2>Autodesk &amp; ASCE</h2>
+                <p>
+                    A documentary video about an educational augmented reality
+                    collaboration between Autodesk and the American Society of
+                    Civil Engineers.
+                </p>
+            </article>
+        </a>
         <a
             href="https://www.adobe-audience-finder.com/"
             target="_blank"
@@ -51,6 +65,18 @@ const classes = ["page", "portfolio"];
                 </p>
             </article>
         </a>
+        <a
+            href="https://vimeo.com/44290726"
+            target="_blank"
+            style="background-image: url(/portfolio-assets/grover-cleveland/thumb.webp)"
+        >
+            <article>
+                <h2>Grover Cleveland: Dinosaur Wrangler</h2>
+                <p>
+                    Trailer for the greatest movie never made. I wrote, directed, edited, and created the flawless VFX for this.
+                </p>
+            </article>
+        </a>
     </section>
 </Layout>
 
@@ -85,13 +111,13 @@ const classes = ["page", "portfolio"];
                 background: rgba(0, 0, 0, 0.5);
                 backdrop-filter: blur(10px);
                 h2 {
-                    color: #FFF;
+                    color: #fff;
                     margin: 0.5rem 0;
                     line-height: 1.7rem;
                     font-weight: normal;
                 }
                 p {
-                    color: #FFF;
+                    color: #fff;
                     max-height: 0;
                     overflow: hidden;
                     margin: 0;
@@ -109,7 +135,8 @@ const classes = ["page", "portfolio"];
         }
         @media screen and (width < 500px) {
             display: block;
-            header, a {
+            header,
+            a {
                 width: 100%;
                 display: block;
                 article p {

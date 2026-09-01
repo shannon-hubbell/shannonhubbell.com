@@ -2,19 +2,25 @@
 import "../styles/global.css";
 import HeaderBar from "../components/HeaderBar.astro";
 import FooterBar from "../components/FooterBar.astro";
+import GtmHeader from "../components/GtmHeader.astro";
 
 interface Props {
+  frontmatter?: {
+    title?: string;
+    description?: string;
+    [key: string]: unknown;
+  };
   pageTitle?: string;
   pageDescription?: string;
   pageClasses?: string | string[];
 }
 
 
-const frontmatter = Astro.props.frontmatter;
+const { frontmatter } = Astro.props;
 
-const title = frontmatter?.title ? frontmatter.title : Astro.props.pageTitle;
-const description = frontmatter?.description ? frontmatter.description : Astro.props.pageDescription;
-const classes = frontmatter?.classes ? frontmatter.classes : Astro.props.pageClasses;
+const title = frontmatter?.title ?? Astro.props.pageTitle ?? "Shannon Ellery Hubbell";
+const description = frontmatter?.description ?? Astro.props.pageDescription ?? "I build things for the internet, I write, and I am more enthusiastic about paleontology than a non-paleontologist adult should be.";
+const classes = frontmatter?.classes ?? Astro.props.pageClasses;
 
 ---
 
@@ -27,23 +33,7 @@ const classes = frontmatter?.classes ? frontmatter.classes : Astro.props.pageCla
 		<meta name="og:title" content={title} />
 		<meta name="og:site_name" content="Shannon Ellery Hubbell" />
 		<meta name="twitter:card" content="summary_large_image" />
-		<!-- Google Tag Manager -->
-		<script>
-			(function (w, d, s, l, i) {
-				w[l] = w[l] || [];
-				w[l].push({
-					"gtm.start": new Date().getTime(),
-					event: "gtm.js",
-				});
-				var f = d.getElementsByTagName(s)[0],
-					j = d.createElement(s),
-					dl = l != "dataLayer" ? "&l=" + l : "";
-				j.async = true;
-				j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-				f.parentNode.insertBefore(j, f);
-			})(window, document, "script", "dataLayer", "GTM-K5JFK64W");
-		</script>
-		<!-- End Google Tag Manager -->
+		<GtmHeader />
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/img/favicon.svg" />

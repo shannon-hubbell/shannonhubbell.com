@@ -4,38 +4,121 @@ import Layout from "../../layouts/Layout.astro";
 const title = "Shannon Hubbell's Portfolio";
 const description =
     "I build things for the internet, I write, and I am more enthusiastic about paleontology than an adult should be.";
-const classes = ["page","portfolio"];
+const classes = ["page", "portfolio"];
 ---
 
 <Layout pageTitle={title} pageDescription={description} pageClasses={classes}>
-    <ul>
-        <li>
-            <strong
-                ><a
-                    href="https://www.adobe-audience-finder.com/"
-                    target="_blank">Adobe Audience Finder</a
-                ></strong
-            ><br />
-            A filterable and searchable directory of Adobe data partners, built in
-            Wordpress.
-        </li>
-        <li>
-            <strong
-                ><a href="/portfolio/cepheid/" target="_blank"
-                    >Cepheid - Move from point-of-complexity to point-of-care
-                    simplicity</a
-                ></strong
-            ><br />
-            Marketing microsite for a medical diagnostics company specializing in
-            DNA testing.
-        </li>
-        <li>
-            <strong
-                ><a href="/portfolio/2goodcompany/" target="_blank"
-                    >Good Company Communications</a
-                ></strong
-            ><br />
-            Website for a digital marketing, streaming, and live event agency.
-        </li>
-    </ul>
+    <section class="portfolio-grid">
+        <header>
+            <h1>Web Portfolio</h1>
+        </header>
+        <a
+            href="https://www.adobe-audience-finder.com/"
+            target="_blank"
+            style="background-image: url(/portfolio-assets/adobe/audience-finder/thumb.webp)"
+        >
+            <article>
+                <h2>Adobe</h2>
+                <p>
+                    A filterable and searchable directory of Adobe data
+                    partners, built in Wordpress.
+                </p>
+            </article>
+        </a>
+        <a
+            href="/portfolio/cepheid"
+            target="_blank"
+            style="background-image: url(/portfolio-assets/cepheid/thumb.webp)"
+        >
+            <article>
+                <h2>Cepheid</h2>
+                <p>
+                    Marketing microsite for a medical diagnostics company
+                    specializing in DNA testing.
+                </p>
+            </article>
+        </a>
+        <a
+            href="/portfolio/2goodcompany"
+            style="background-image: url(/portfolio-assets/2goodcompany/thumb.webp)"
+        >
+            <article>
+                <h2>Good Company Communications</h2>
+                <p>
+                    Website for a digital marketing, streaming, and live event
+                    agency.
+                </p>
+            </article>
+        </a>
+    </section>
 </Layout>
+
+<style>
+    section.portfolio-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        header,
+        a {
+            background-color: #9f87af;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 50%;
+            aspect-ratio: 1;
+        }
+        header {
+            background: #000;
+            h1 {
+                padding: 2rem;
+                color: #9f87af;
+                font-weight: normal;
+            }
+        }
+        a {
+            position: relative;
+            article {
+                position: absolute;
+                bottom: 0;
+                padding: 1rem;
+                background: rgba(0, 0, 0, 0.5);
+                backdrop-filter: blur(10px);
+                h2 {
+                    color: #FFF;
+                    margin: 0.5rem 0;
+                    line-height: 1.7rem;
+                    font-weight: normal;
+                }
+                p {
+                    color: #FFF;
+                    max-height: 0;
+                    overflow: hidden;
+                    margin: 0;
+                    opacity: 0;
+                    transition: all 0.5s ease-out;
+                }
+            }
+            &:hover {
+                p {
+                    max-height: 370px;
+                    opacity: 1;
+                    transition: all 0.5s ease-in;
+                }
+            }
+        }
+        @media screen and (width < 500px) {
+            display: block;
+            header, a {
+                width: 100%;
+                display: block;
+                article p {
+                    max-height: 500px;
+                    opacity: 1;
+                }
+            }
+            header {
+                display: none;
+            }
+        }
+    }
+</style>

@@ -1,0 +1,43 @@
+<nav id="portfolio-bar">
+    <div class="inner">
+        <a href="/portfolio" class="back"> Back to Portfolio</a>
+        <a href="/" class="home">SH</a>
+    </div>
+</nav>
+
+<style>
+    body {
+        padding-top: 3rem;
+    }
+    #portfolio-bar {
+        background: #000;
+        border-bottom: 1px solid #9f87af;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        padding: 1rem 0;
+        margin-bottom: 100%;
+        .inner {
+            margin: 0 auto;
+            width: 1200px;
+            max-width: calc(100% - 2em);
+            display: flex;
+        }
+        a {
+            width: 50%;
+            color: #9f87af;
+            text-decoration: none;
+            &.back {
+                &::before {
+                    content: "←";
+                }
+            }
+            &.home {
+                text-align: right;
+                font-weight: bold;
+            }
+        }
+    }
+</style>

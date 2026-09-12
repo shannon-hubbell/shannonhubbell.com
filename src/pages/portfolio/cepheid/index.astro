@@ -1,3 +1,7 @@
+---
+import GtmHeader from "../../../components/GtmHeader.astro";
+import PortfolioBar from "../../../components/PortfolioBar.astro";
+---
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -18,6 +22,8 @@
       crossorigin="anonymous"
       is:inline
     ></script>
+
+    <GtmHeader />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -76,6 +82,7 @@ is:inline
     <!-- OneTrust Cookies Consent Notice end for cepheid.com -->
   </head>
   <body>
+    <PortfolioBar />
     <!-- Google Tag Manager (noscript) -->
     <noscript
       ><iframe

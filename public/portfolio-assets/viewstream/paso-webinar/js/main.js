@@ -1,0 +1,1 @@
+"use strict";$(document).ready(function(){$("button.close").click(function(){!0!==localStorage.getItem("cookieViewed")&&(localStorage.setItem("cookieViewed",!0),$("#cookie-notification").css("display","none"))})});

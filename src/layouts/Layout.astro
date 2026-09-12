@@ -27,37 +27,39 @@ const classes = frontmatter?.classes ?? Astro.props.pageClasses;
 <!doctype html>
 <html lang="en">
 	<head>
-		<meta name="og:image" content="/img/headshot-share.jpg" />
-		<meta name="og:url" content={Astro.url} />
-		<meta name="og:description" content={description} />
-		<meta name="og:title" content={title} />
-		<meta name="og:site_name" content="Shannon Ellery Hubbell" />
-		<meta name="twitter:card" content="summary_large_image" />
-		<GtmHeader />
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/img/favicon.svg" />
-		<link rel="icon" href="/img/favicon.ico" />
-		<meta name="generator" content={Astro.generator} />
-		<meta name="description" content=description} />
+		<title>{title}</title>
+
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&amp;display=swap"
 			rel="stylesheet"
 		/>
-		<title>{title}</title>
+		<meta name="og:title" content={title} />
+		<meta name="og:description" content={description} />
+		<meta name="description" content={description} />
+
+		<link rel="icon" type="image/svg+xml" href="/img/favicon.svg" />
+		<link rel="icon" href="/img/favicon.ico" />
+
+		<meta name="og:image" content="/img/headshot-share.jpg" />
+		
+		<link rel="canonical" href={Astro.url}>
+		<meta name="og:url" content={Astro.url} />
+		
+		<meta name="og:site_name" content="Shannon Ellery Hubbell" />
+
+		<meta name="author" content="Shannon Ellery Hubbll">
+
+		<meta name="twitter:card" content="summary_large_image" />
+		<GtmHeader />
+
+		<meta name="generator" content={Astro.generator} />
+
 	</head>
 	<body class:list={classes}>
-		<!-- Google Tag Manager (noscript) -->
-		<noscript
-			><iframe
-				src="https://www.googletagmanager.com/ns.html?id=GTM-K5JFK64W"
-				height="0"
-				width="0"
-				style="display:none;visibility:hidden"></iframe></noscript
-		>
-		<!-- End Google Tag Manager (noscript) -->
 		<HeaderBar />
 		<main>
 			<slot />

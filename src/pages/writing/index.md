@@ -11,5 +11,11 @@ classes: [page, writing]
 [Blood, Milk, and Chrome](/writing/fury-road)\
 "MAX MAX: FURY ROAD is one long (and exquisitely crafted) chase scene, but there's more than that going on under the hood."
 
-[Nicolas Roeg, 1928-2018](/writing/nicholas-roeg)\
-Upon Nicolas Roeg's death at the age of 90, Shannon reflects on the effect that his film DON'T LOOK NOW has had on him, decades later.
+[In and Out: How the Assembly Cut of ALIEN 3 Subverts the Endings of its Predecessors](/writing/alien-cubed)\
+The bleakest of the ALIEN films riffs on what came before, and in the process brings the franchise to a powerful conclusion.
+
+[Nicolas Roeg, 1928-2018, Will Continue to Haunt Us](/writing/nicholas-roeg)\
+Upon Nicolas Roeg's death at the age of 90, I looked back at his film DON'T LOOK NOW and the effect it has had on me over the decades.
+
+[Artifice & Visual Story-Telling in Francis Ford Coppola’s Dracula](/writing/dracula)\
+I wrote this for class back in 1998 and posted it to my Angelfire site. It's rickety, but it holds up.

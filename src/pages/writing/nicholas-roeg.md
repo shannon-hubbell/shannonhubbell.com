@@ -2,12 +2,12 @@
 layout: '../../layouts/Layout.astro'
 
 title: "Nicolas Roeg, 1928-2018, Will Continue to Haunt Us - Shannon Ellery Hubbell"
-description: "Upon Nicolas Roeg's death at the age of 90, Shannon reflects on the effect that his 1973 film DON'T LOOK NOW has had on him, decades later."
+description: "Upon Nicolas Roeg's death at the age of 90, I looked back at his film DON'T LOOK NOW and the effect it has had on me over the decades."
 og_title: 'Nicolas Roeg, 1928-2018, Will Continue to Haunt Us - Shannon Ellery Hubbell'
 classes: [page, writing]
 ---
 
-# [Writing](/writing) / Nicolas Roeg, 1928-2018
+# [Writing](/writing) / Nicolas Roeg, 1928-2018, Will Continue to Haunt Us
 
 ![](/portfolio-assets/nicholas-roeg/dont-look-now-still.jpg)
 
@@ -54,12 +54,7 @@ I went on to buy it, but hesitantly. Was this a cursed tape?
 
 There are a lot of things you can say about an artist when they die. Their life story. Their accolades. Their financial successes and failures. The influence they've had on their medium and culture at large. But here's what I'll say about Nicolas Roeg. He managed to make a movie that was so affecting—so unnerving—that it managed to terrify two people, years after watching it. I think that's some of the highest praise I can give anyone.
 
-Rest in peace, Nicolas Roeg. Or don't. Keep haunting us. You're good at it.
-
-<iframe id="ytplayer" type="text/html" width="640" height="360"
-  src="https://www.youtube.com/embed/AUWB-Kw4FiM"
-  frameborder="0"></iframe>
- 
+Rest in peace, Nicolas Roeg. Or don't. Keep haunting us. You're good at it. 
 
 ----
 

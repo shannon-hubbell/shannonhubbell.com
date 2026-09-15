@@ -1,27 +1,31 @@
 ---
 import "../styles/global.css";
+import { ClientRouter } from "astro:transitions";
+
 import HeaderBar from "../components/HeaderBar.astro";
 import FooterBar from "../components/FooterBar.astro";
 import GtmHeader from "../components/GtmHeader.astro";
 
 interface Props {
-  frontmatter?: {
-    title?: string;
-    description?: string;
-    [key: string]: unknown;
-  };
-  pageTitle?: string;
-  pageDescription?: string;
-  pageClasses?: string | string[];
+	frontmatter?: {
+		title?: string;
+		description?: string;
+		[key: string]: unknown;
+	};
+	pageTitle?: string;
+	pageDescription?: string;
+	pageClasses?: string | string[];
 }
-
 
 const { frontmatter } = Astro.props;
 
-const title = frontmatter?.title ?? Astro.props.pageTitle ?? "Shannon Ellery Hubbell";
-const description = frontmatter?.description ?? Astro.props.pageDescription ?? "I build things for the internet, I write, and I am more enthusiastic about paleontology than a non-paleontologist adult should be.";
+const title =
+	frontmatter?.title ?? Astro.props.pageTitle ?? "Shannon Ellery Hubbell";
+const description =
+	frontmatter?.description ??
+	Astro.props.pageDescription ??
+	"I build things for the internet, I write, and I am more enthusiastic about paleontology than a non-paleontologist adult should be.";
 const classes = frontmatter?.classes ?? Astro.props.pageClasses;
-
 ---
 
 <!doctype html>
@@ -34,7 +38,7 @@ const classes = frontmatter?.classes ?? Astro.props.pageClasses;
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&amp;display=swap"
+			href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
 			rel="stylesheet"
 		/>
 		<meta name="og:title" content={title} />
@@ -45,19 +49,19 @@ const classes = frontmatter?.classes ?? Astro.props.pageClasses;
 		<link rel="icon" href="/img/favicon.ico" />
 
 		<meta name="og:image" content="/img/headshot-share.jpg" />
-		
-		<link rel="canonical" href={Astro.url}>
+
+		<link rel="canonical" href={Astro.url} />
 		<meta name="og:url" content={Astro.url} />
-		
+
 		<meta name="og:site_name" content="Shannon Ellery Hubbell" />
 
-		<meta name="author" content="Shannon Ellery Hubbll">
+		<meta name="author" content="Shannon Ellery Hubbll" />
 
 		<meta name="twitter:card" content="summary_large_image" />
 		<GtmHeader />
 
 		<meta name="generator" content={Astro.generator} />
-
+		<ClientRouter />
 	</head>
 	<body class:list={classes}>
 		<HeaderBar />
@@ -69,26 +73,12 @@ const classes = frontmatter?.classes ?? Astro.props.pageClasses;
 </html>
 
 <style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-		font-family: "Lexend", sans-serif;
-		font-optical-sizing: auto;
-		font-weight: 400;
-		font-style: normal;
-		font-size: 16px;
-		background: #fff;
-		color: #222;
-	}
 	main {
 		width: 800px;
 		max-width: calc(100% - 2em);
 		margin: 0 auto;
 		line-height: 1.5rem;
 		text-wrap: pretty;
-		border-top: 1px solid var(--color-highlight);
 		h1 {
 			line-height: 2.5rem;
 		}

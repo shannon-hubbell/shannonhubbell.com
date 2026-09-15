@@ -1,13 +1,15 @@
 ---
-import { Image } from "astro:assets";
-import shHeadshot from "../assets/sh-headshot.webp";
-import MainMenu  from "../components/MainMenu.astro";
-
+import MainMenu from "../components/MainMenu.astro";
 ---
 
 <header>
-    
-    <img src="/img/headshot.webp" class="align-right mug" />
+    <a href="/>"
+        ><img
+            src="/img/headshot.webp"
+            alt="Headshot of Shannon"
+            class="align-right mug"
+        />
+    </a>
 
     <div class="inner">
         <h1><a href="/">Shannon Ellery Hubbell</a></h1>
@@ -39,7 +41,7 @@ import MainMenu  from "../components/MainMenu.astro";
     }
 
     h2 {
-        color: #CCC;
+        color: #ccc;
         margin: 0;
         padding: 0.4rem 0 0 0;
     }
@@ -60,7 +62,7 @@ import MainMenu  from "../components/MainMenu.astro";
         }
         div.inner {
             width: auto;
-            text-align: ;
+            text-align:;
         }
         img.mug {
             width: 200px;
